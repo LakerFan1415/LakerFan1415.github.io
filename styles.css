@@ -1,0 +1,10 @@
+body{
+    width: 75%;
+    margin: auto;
+    background-color: lightgray;
+    text-align: center;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
