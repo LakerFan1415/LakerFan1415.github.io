@@ -7,4 +7,9 @@ body{
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px whitesmoke;
+}
+
+p {
+    font-family: sans-serif;
 }
