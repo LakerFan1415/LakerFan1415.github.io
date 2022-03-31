@@ -7,22 +7,56 @@
 
 
 body{
-    background-color: lightgray;
     text-align: center;
     box-sizing: border-box;
-    background-image: linear-gradient(
-        to right bottom,
-        #7e067ee0,
-        #e7e710,
-        );
+    background-image: linear-gradient(to right bottom, rgb(128, 0, 128), rgb(223, 223, 19));
+    height: 100vh;
+    position: relative;
 }
+
+.main-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 h1 {
     display: block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 2px 2px whitesmoke;
+    color: rgb(83, 34, 83);
+    font-size: 200%;
+}
+
+h1:hover{
+    color:rgb(44, 15, 44)
 }
 
 p {
     font-family: sans-serif;
+    color: rgb(211, 211, 211);
+    font-weight: 700;
+    display:block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color:rgb(83, 34, 83);
+    font-size: 150%;
+}
+
+a:hover{
+    color:rgb(44, 15, 44);
+    background-color: rgb(134, 130, 130);
+    transform: translateY(-3px);
+}
+
+a:last-of-type {
+    text-transform: none;
 }
