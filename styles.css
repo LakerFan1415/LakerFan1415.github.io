@@ -1,11 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border: 1px;
+}
+
+
 body{
-    width: 75%;
-    margin: auto;
     background-color: lightgray;
     text-align: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(
+        to right bottom,
+        #7e067ee0,
+        #e7e710,
+        );
 }
 
 h1 {
+    display: block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 2px 2px whitesmoke;
 }
