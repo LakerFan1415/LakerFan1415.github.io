@@ -12,6 +12,7 @@ body{
     background-image: linear-gradient(to right bottom, rgb(128, 0, 128), rgb(223, 223, 19));
     height: 100vh;
     position: relative;
+    font-family: 'Oswald', sans-serif;
 }
 
 .main-content {
@@ -26,19 +27,17 @@ h1 {
     display: block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(83, 34, 83);
-    font-size: 200%;
-}
-
-h1:hover{
-    color:rgb(44, 15, 44)
+    font-size: 250%;
+    animation: moveHeader 1s ease-in-out .5s;
 }
 
 p {
-    font-family: sans-serif;
     color: rgb(211, 211, 211);
-    font-weight: 700;
     display:block;
+    margin: 15px;
+    animation: sprinkleParagraph 2s;
 }
+
 
 a {
     display: inline-block;
@@ -48,7 +47,8 @@ a {
     padding: 10px 20px;
     text-transform: capitalize;
     color:rgb(83, 34, 83);
-    font-size: 150%;
+    font-size: 100%;
+    box-shadow: 5px 5px 5px;
 }
 
 a:hover{
@@ -57,6 +57,44 @@ a:hover{
     transform: translateY(-3px);
 }
 
-a:last-of-type {
-    text-transform: none;
+
+
+/* Animations  */
+
+@keyframes moveHeader {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    50% {
+        transform: translateX(50px)
+
+    }
+
+    100% {
+        transform: translate(0);
+
+    }
+
+}
+
+@keyframes sprinkleParagraph {
+
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+
+
 }
